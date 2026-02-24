@@ -1,4 +1,4 @@
-# Advanced University & Course Scraper (Selenium Version)
+# Advanced University & Course Scraper 
 
 ## Features
 - Uses Selenium (Headless Chrome)
