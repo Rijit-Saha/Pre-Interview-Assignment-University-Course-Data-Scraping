@@ -6,9 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from openpyxl import Workbook
 
-# -----------------------------
-# Setup Selenium
-# -----------------------------
 
 def setup_driver():
     chrome_options = Options()
@@ -18,9 +15,7 @@ def setup_driver():
     driver = webdriver.Chrome(options=chrome_options)
     return driver
 
-# -----------------------------
-# University Metadata
-# -----------------------------
+
 
 universities = [
     {"university_id": "U001", "university_name": "University of Helsinki", "country": "Finland", "city": "Helsinki", "website": "https://www.helsinki.fi/en"},
@@ -30,9 +25,7 @@ universities = [
     {"university_id": "U005", "university_name": "University of Alberta", "country": "Canada", "city": "Edmonton", "website": "https://www.ualberta.ca"},
 ]
 
-# -----------------------------
-# Scrape Courses (Generic Demo Logic)
-# -----------------------------
+
 
 def scrape_courses(driver, university):
     courses = []
@@ -60,9 +53,7 @@ def scrape_courses(driver, university):
 
     return courses
 
-# -----------------------------
-# Main Execution
-# -----------------------------
+
 
 def main():
     driver = setup_driver()
